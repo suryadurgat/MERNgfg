@@ -1,0 +1,12 @@
+.jav{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    font-size: 60px;
+    color: palevioletred ;
+
+}
+.obb{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

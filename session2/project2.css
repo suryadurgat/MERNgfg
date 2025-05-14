@@ -1,0 +1,66 @@
+.box{
+   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "title title title"
+    "content content aside"
+    "footer footer aside";
+    grid-template-rows: 200px 500px 200px;
+    
+    
+}
+.title{
+    grid-area: title;
+    background-color: pink;
+    border: black dotted;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.content{
+    grid-area: content;
+    background-color: skyblue;
+    border: black dotted;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+ 
+    
+}
+.aside{
+    grid-area: aside;
+    background-color: green;
+    border: black dotted;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+ 
+}
+.footer{
+    grid-area: footer;
+    background-color: yellow;
+    border: black dotted;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 765px){
+    .box{
+        grid-column: auto;
+        grid-template-areas: 
+        "title"
+        "content"
+        "aside"
+        "footer";
+    }
+    
+}
